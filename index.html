@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doanskan OS | The Ironclad System</title>
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-green: #10b981;
+            --accent-hover: #059669;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.5;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            border-bottom: 1px solid #334155;
+            background-color: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: var(--accent-green);
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--text-main);
+        }
+
+        .hero {
+            max-width: 900px;
+            margin: 100px auto;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: rgba(16, 185, 129, 0.15);
+            color: var(--accent-green);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+            border: 1px solid var(--accent-green);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin: 0 0 20px 0;
+            font-weight: 900;
+            letter-spacing: -1px;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 50px auto;
+        }
+
+        .btn-download {
+            display: inline-block;
+            background-color: var(--accent-green);
+            color: #fff;
+            padding: 15px 40px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: background-color 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
+        }
+
+        .btn-download:hover {
+            background-color: var(--accent-hover);
+            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5);
+        }
+
+        .features {
+            max-width: 1000px;
+            margin: 100px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--accent-green);
+            font-size: 1.3rem;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #475569;
+            font-size: 0.8rem;
+            border-top: 1px solid #334155;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">DOANSKAN OS</div>
+        <nav>
+            <a href="#features">Características</a>
+            <a href="#download">Descargas</a>
+            <a href="#docs">Documentación</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="badge">V1.0 Beta - Fase de Pruebas</div>
+            <h1>The Ironclad System</h1>
+            <div class="tagline">Cero llamadas de soporte a medianoche. Bloquea usuarios, resucita chatarra y mantén tu red bajo control estricto sin excepciones.</div>
+            <a href="#download" class="btn-download">Descargar ISO (Beta)</a>
+        </div>
+
+        <div class="features" id="features">
+            <div class="card">
+                <h3>La Jaula de Oro (Oficina)</h3>
+                <p>Interfaz purgada y blindada. Sin accesos a terminal ni configuraciones raras. Solo lo necesario para producción: Chrome, Thunderbird y LibreOffice.</p>
+            </div>
+            <div class="card">
+                <h3>Optimización Extrema</h3>
+                <p>Diseñada para revivir PCs prehistóricas. Corre fluido incluso en equipos con 2GB de RAM, maximizando el hardware viejo de la empresa.</p>
+            </div>
+            <div class="card">
+                <h3>Estabilidad Debian</h3>
+                <p>Construido bajo el capó de Debian. Es el motor silencioso que empuja sin fallar, configurado para parcharse solo por las noches.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Doanskan OS &copy; 2026. Proyecto corporativo de seguridad y optimización. No le piques a lo que no sabes, chale.
+    </footer>
+
+</body>
+</html>
